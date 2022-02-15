@@ -12,3 +12,8 @@ https://oj.lidemy.com/
 
 ## 新手要寫心得
 https://medium.com/hulis-blog/why-blogging-ab77fd8c6ffa
+
+## 好文推薦
+http://blog.xdite.net/posts/2012/10/23/some-advice-for-undergraduate/
+http://blog.xdite.net/posts/2012/10/25/another-advice-for-undergraduate/
+https://www.ptt.cc/bbs/Programming/M.1411474900.A.746.html
