@@ -1,5 +1,7 @@
 # LiOJ-prctice
  練習程式題目
+## YT LiOJ說明
+https://youtu.be/v7zv1ixaO3M 
 
 ## 新手些別急著刷leetcode
 https://lidemy.com/p/alg101-leetcode

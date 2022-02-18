@@ -1,4 +1,4 @@
-//cat input.txt | node 1007.js
+//cat input.txt | node 1008.js
 var readline = require("readline");
 
 var lines = [];
@@ -15,20 +15,20 @@ rl.on("close", function () {
 });
 
 function solve(lines) {
-  let row = Number(lines[0]);
-  let box = [["default", -1]];
-  for (let i = 1; i < row + 1; i++) {
-    let arr = lines[i].split(" ");
-    arr[1] = Number(arr[1]);
-    let copy = arr.concat();
-    if (arr[1] > box[0][1]) {
-      box = [];
-      box.push(copy);
-    } else if (arr[1] === box[0][1]) {
-      box.push(copy);
+  let water = Number(lines[0]);
+  let arr = [];
+  let counter = 0;
+  for (let i = 0; i < 31; i++) {
+    arr.push(2 ** i);
+  }
+  for (let i = 30; i >= 0; i--) {
+    let remainder = 0;
+    if (water >= arr[i]) {
+      remainder = water % arr[i];
+      counter = counter + (water - remainder) / arr[i];
+      water -= arr[i];
     }
   }
-  for (let i = 0; i < box.length; i++) {
-    console.log(box[i][0]);
-  }
+
+  console.log(counter);
 }
