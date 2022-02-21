@@ -42,4 +42,9 @@ inputArr.forEach((e, i, a) => {
     output.push(e[0]);
   }
 });
+
+function SumDatareduce(arr){
+    return arr.reduce((a,b)=>a+b);  
+}
+console.log(SumDatareduce([1,2,3]));
 ```
