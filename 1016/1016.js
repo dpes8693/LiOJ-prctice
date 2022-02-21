@@ -16,7 +16,6 @@ rl.on("close", function () {
 
 function solve(lines) {
   let num = Number(lines[0]);
-  if (num === 0) return;
   let A = [];
   let B = [];
   let who = 0;
@@ -38,7 +37,7 @@ function solve(lines) {
 function smallerArr(A, B) {
   let a = A.length;
   let b = B.length;
-  if (a === 0 || b === 0) return -1;
+  if (a === 0 || b === 0) return ["", -1, []];
   if (a < b) {
     return ["A", a, A];
   } else if (a === b) {
