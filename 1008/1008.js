@@ -22,10 +22,11 @@ function solve(lines) {
     arr.push(2 ** i);
   }
   for (let i = 30; i >= 0; i--) {
-    let remainder = 0;
+    // let remainder = 0;
     if (water >= arr[i]) {
-      remainder = water % arr[i];
-      counter = counter + (water - remainder) / arr[i];
+      // remainder = water % arr[i];
+      // counter = counter + (water - remainder) / arr[i];
+      counter++;
       water -= arr[i];
     }
   }
