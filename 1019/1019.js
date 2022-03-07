@@ -54,7 +54,6 @@ function findPath(maze, x, y, sidelineX, sidelineY) {
   return maze[sidelineX][sidelineY];
 }
 
-
 //建立圍牆防止超出範圍
 function buildWall(input, x, y) {
   let maze = [""];
@@ -75,11 +74,18 @@ function buildWall(input, x, y) {
 //算步數
 function countStep(maze) {
   let counter = 0;
+  //直覺的算法: 
   for (x in maze) {
-    for (y in maze) {
+    for (y in maze[x]) {
       if (maze[x][y] === "o") counter++;
     }
   }
-  return counter-1;
-}
 
+  //用filter篩選的算法
+  // for (let i = 1; i < maze.length - 1; i++) {
+  //   let result = maze[i].filter((el) => el === "o");
+  //   counter += result.length;
+  // }
+
+  return counter - 1;
+}
