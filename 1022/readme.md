@@ -7,4 +7,4 @@ input = 3
 空白=2,1,0
 星星=1,3,5
 
-https://oj.lidemy.com/problem/1021
+https://oj.lidemy.com/problem/1022
