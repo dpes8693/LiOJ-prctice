@@ -1,7 +1,11 @@
 # LiOJ-prctice
 
 練習程式題目
-認識內建Function: 1036~1045(10題)
+
+認識內建 Function: 
+
+1036~1045[10 題]
+
 剛學推薦寫: 1001,1015,1002,1009,1010,1011,1012,1021~1024
 
 ## YT LiOJ 說明
@@ -45,8 +49,8 @@ inputArr.forEach((e, i, a) => {
   }
 });
 
-function SumDatareduce(arr){
-    return arr.reduce((a,b)=>a+b);  
+function SumDatareduce(arr) {
+  return arr.reduce((a, b) => a + b);
 }
-console.log(SumDatareduce([1,2,3]));
+console.log(SumDatareduce([1, 2, 3]));
 ```
