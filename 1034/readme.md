@@ -20,6 +20,11 @@
 
 "ABC".charCodeAt(3) // returns NaN
 
+//
+String.fromCharCode(97) // 'a'
+String.fromCharCode(65) // "A"
+
+
 ```
 
 https://oj.lidemy.com/problem/1034
